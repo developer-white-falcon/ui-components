@@ -1,0 +1,473 @@
+/* Base Button */
+.btn {
+  transition-property: color, transform, background-color, border-color;
+  transition-timing-function: ease-in;
+  display: inline-flex;
+  height: 2.5rem; /* 40px */
+  cursor: pointer;
+  user-select: none;
+  justify-items: start;
+  justify-content: center;
+  border-radius: 0.75rem; /* 12px */
+  background-color: rgb(243 243 243);
+  padding-left: 1.25rem; /* 20px */
+  padding-right: 1.25rem; /* 20px */
+  text-align: center;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: 500;
+  color: rgb(28 28 28);
+  transition-duration: 150ms;
+  will-change: transform;
+}
+
+.btn:focus {
+  outline-width: 2px;
+}
+
+.btn:focus-visible {
+  outline-style: solid;
+  outline-offset: 2px;
+  background-color: rgb(75, 85, 99);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:where(
+    .btn-primary,
+    .btn-secondary,
+    .btn-success,
+    .btn-error,
+    .btn-warning
+  ) {
+  border-style: none;
+  color: rgb(255 255 255);
+}
+
+/* Primary Colors */
+.btn-primary {
+  background-color: rgb(0 114 245);
+}
+
+.btn-primary:focus-visible {
+  outline-color: rgb(0 114 245);
+}
+
+.btn-secondary {
+  background-color: rgb(151 80 221);
+}
+
+.btn-secondary:focus-visible {
+  outline-color: rgb(151 80 221);
+}
+
+.btn-success {
+  background-color: rgb(23 201 100);
+}
+
+.btn-success:focus-visible {
+  outline-color: rgb(23 201 100);
+}
+
+.btn-error {
+  background-color: rgb(243 18 96);
+}
+
+.btn-error:focus-visible {
+  outline-color: rgb(243 18 96);
+}
+
+.btn-warning {
+  background-color: rgb(255 184 0);
+}
+
+.btn-warning:focus-visible {
+  outline-color: rgb(255 184 0);
+}
+
+.btn-info {
+  background-color: rgb(3 183 219);
+  color: rgb(255 255 255);
+}
+
+.btn-info:focus-visible {
+  outline-color: rgb(3 183 219);
+}
+
+/* Outline colors */
+.btn-outline {
+  border-width: 2px;
+  border-color: rgb(75 85 99);
+  background-color: transparent;
+  color: rgb(0 0 0);
+
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-outline:hover {
+  border-color: rgb(237 237 237);
+  background-color: rgb(156 163 175);
+}
+
+.btn-outline:focus-visible {
+  outline-color: rgb(219 219 219);
+}
+
+.btn-outline-primary {
+  border-width: 2px;
+  border-color: rgb(0 114 245);
+  background-color: transparent;
+  color: rgb(0 114 245);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-outline-primary:hover {
+  background-color: rgb(0 114 245);
+  color: rgb(255 255 255);
+}
+
+.btn-outline-primary:focus-visible {
+  outline-color: rgb(0 114 245);
+}
+
+.btn-outline-secondar {
+  border-width: 2px;
+  border-color: rgb(151 80 221);
+  background-color: transparent;
+  color: rgb(151 80 221);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-outline-secondar:hover {
+  background-color: rgb(151 80 221);
+  color: rgb(255 255 255);
+}
+
+.btn-outline-secondar:focus-visible {
+  outline-color: rgb(151 80 221);
+}
+
+.btn-outline-success {
+  border-width: 2px;
+  border-color: rgb(23 201 100);
+  background-color: transparent;
+  color: rgb(23 201 100);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-outline-success:hover {
+  background-color: rgb(23 201 100);
+  color: rgb(255 255 255);
+}
+
+.btn-outline-success:focus-visible {
+  outline-color: rgb(23 201 100);
+}
+
+.btn-outline-error {
+  border-width: 2px;
+  border-color: rgb(243 18 96);
+  background-color: transparent;
+  color: rgb(243 18 96);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-outline-error:hover {
+  background-color: rgb(243 18 96);
+  color: rgb(255 255 255);
+}
+
+.btn-outline-error:focus-visible {
+  outline-color: rgb(243 18 96);
+}
+
+.btn-outline-warning {
+  border-width: 2px;
+  border-color: rgb(255 184 0);
+  background-color: transparent;
+  color: rgb(255 184 0);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-outline-warning:hover {
+  background-color: rgb(255 184 0);
+  color: rgb(255 255 255);
+}
+
+.btn-outline-warning:focus-visible {
+  outline-color: rgb(255 184 0);
+}
+
+.btn-outline-info {
+  border-color: rgb(3 183 219);
+  color: rgb(3 183 219);
+  border-width: 2px;
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-outline-info:hover {
+  color: rgb(255 255 255);
+  background-color: rgb(3 183 219);
+}
+
+.btn-outline-info:focus-visible {
+  outline-color: rgb(3 183 219);
+}
+
+/* Button Sizes */
+.btn-xs {
+  height: 1.5rem;
+  min-height: 1.5rem;
+  border-radius: 0.438rem; /* 7px */
+  padding-left: 0.5rem; /* 8px */
+  padding-right: 0.5rem; /* 8px */
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+
+.btn-sm {
+  height: 2rem; /* 32px */
+  min-height: 2rem;
+  border-radius: 0.5rem; /* 8px */
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem; /* 12px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.btn-md {
+  height: 2.5rem; /* 40px */
+  min-height: 2.5rem;
+  padding-left: 1.25rem; /* 20px */
+  padding-right: 1.25rem; /* 20px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.btn-lg {
+  height: 3rem; /* 48px */
+  min-height: 3rem;
+  padding-left: 1.5rem; /* 24px */
+  padding-right: 1.5rem; /* 24px */
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.btn-xl {
+  height: 4rem; /* 64px */
+  min-height: 4rem;
+  border-radius: 1rem; /* 16px */
+  padding-left: 2rem; /* 32px */
+  padding-right: 2rem; /* 32px */
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-circle {
+  height: 2.5rem; /* 40px */
+  width: 2.5rem; /* 40px */
+  border-radius: 9999px;
+  padding: 0px;
+}
+
+.btn-rounded {
+  border-radius: 9999px;
+}
+
+.btn-loading {
+  pointer-events: none;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.btn-loading:before {
+  margin-right: 0.5rem; /* 8px */
+  box-sizing: border-box;
+  height: 1rem; /* 16px */
+  width: 1rem; /* 16px */
+
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: rgb(226 226 226);
+  border-top-color: rgb(143 143 143);
+
+  content: "";
+
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform:transform: rotate(0deg);
+    }
+    to {
+      transform:transform: rotate(360deg);
+    }
+  }
+}
+
+.btn-no-animation:active {
+  transform: none;
+}
+
+.btn-ghost {
+  border-style: none;
+  background-color: transparent;
+  color: rgb(0 0 0);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-ghost:hover {
+  background-color: rgb(156 163 175);
+}
+
+.btn-active {
+  background-color: rgb(107 114 128);
+}
+
+.btn-solid-primary {
+  background-color: rgb(225 240 255);
+  color: rgb(0 106 220);
+}
+
+.btn-solid-primary:hover {
+  background-color: rgb(206 231 254);
+}
+
+.btn-solid-primary:focus-visible {
+  outline-color: rgb(183 217 248);
+}
+
+.btn-solid-primary:active {
+  background-color: rgb(183 217 248);
+}
+
+.btn-solid-secondary {
+  background-color: rgb(243 231 252);
+  color: rgb(121 58 175);
+}
+
+.btn-solid-secondary:hover {
+  background-color: rgb(237 219 249);
+}
+
+.btn-solid-secondary:focus-visible {
+  outline-color: rgb(227 204 244);
+}
+
+.btn-solid-secondary:active {
+  background-color: rgb(147 51 234);
+}
+
+.btn-solid-success {
+  background-color: rgb(221 243 228);
+  color: rgb(24 121 78);
+}
+
+.btn-solid-success:hover {
+  background-color: rgb(204 235 215);
+}
+
+.btn-solid-success:focus-visible {
+  outline-color: rgb(180 223 196);
+}
+
+.btn-solid-success:active {
+  background-color: rgb(180 223 196);
+}
+
+.btn-solid-error {
+  background-color: rgb(255 229 229);
+  color: rgb(205 43 49);
+}
+
+.btn-solid-error:hover {
+  background-color: rgb(253 216 216);
+}
+
+.btn-solid-error:focus-visible {
+  outline-color: rgb(249 198 198);
+}
+
+.btn-solid-error:active {
+  background-color: rgb(249 198 198);
+}
+
+.btn-solid-warning {
+  background-color: rgb(255 248 187);
+  color: rgb(148 104 0);
+
+  width: 1.25rem; /* 20px */
+}
+
+.btn-solid-warning:hover {
+  background-color: rgb(254 242 164);
+}
+
+.btn-solid-warning:focus-visible {
+  outline-color: rgb(249 230 140);
+}
+
+.btn-solid-warning:active {
+  background-color: rgb(249 230 140);
+}
+
+.btn-solid-info {
+  background-color: rgb(216 243 246);
+  color: rgb(12 119 146);
+}
+
+.btn-solid-info:hover {
+  background-color: rgb(196 234 239);
+}
+
+.btn-solid-info:focus-visible {
+  outline-color: rgb(170 222 230);
+}
+
+.btn-solid-info:active {
+  background-color: rgb(170 222 230);
+}

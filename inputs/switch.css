@@ -1,0 +1,271 @@
+.switch {
+
+   background-color: #fff;
+   border-color: ;
+
+   
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color:: rgb(226 226 226);
+  border-color: rgb(226 226 226);
+  background-color:-checked: rgb(0 114 245);
+  border-color:-checked: rgb(0 114 245);
+  border-color:-hover: rgb(226 226 226);
+  background-color:-hover: rgb(226 226 226);
+  rgb(255 255 255): rgb(255 255 255);
+  --circle-color: rgb(252 252 252);;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+   position: relative; margin: 0px; display: inline-block;  h-[21px] w-[38px] cursor: pointer; appearance: none;   border-radius: 0.75rem; /* 12px */ /* 12px */  border-width: 1px; border-[var(border-color:)]  bg-[var(background-color:)] vertical-align: top; outline: 2px solid transparent;
+outline-offset: 2px; focus:outline-width: 2px; focus-visible: outline-style: solid;  focus-visible:outline-offset: 2px;  focus-visible:outline-color: rgb(0 114 245);
+}
+
+.switch::after {
+  transition: transform var(0.6s, 0.15s) var(cubic-bezier(0.2, 0.85, 0.32, 1.2), ease),
+    opacity var(0.3s, 0.15s);
+   position: absolute; left: 0px; top: 0px; display: block; content: "";
+}
+
+.switch:checked {
+  --circle-color: rgb(255 255 255);
+   border-[var(border-color:-checked)] bg-[var(background-color:-checked)];
+  1: 1;
+  43deg 43deg;
+}
+
+.switch:disabled {
+   cursor: not-allowed; border-color: rgb(219 219 219);
+ background-color: rgb(55 65 81); opacity: 0.5;
+}
+
+.switch:disabled:checked {
+  --circle-color: rgb(255 255 255);
+}
+
+.switch:disabled + label {
+   cursor: not-allowed;
+}
+
+.switch:hover:not(:checked):not(:disabled) {
+   border-[var(border-color:-hover)] bg-[var(background-color:-hover)];
+}
+
+/* CheckLine */
+.switch::after {
+  transform: translateX(var(--x, 0));
+   left:2px; top:2px; h: 15px; w: 15px; border-radius: 9999px; bg-[var(--circle-color)];
+}
+
+.switch:checked {
+  --x: 17px;
+}
+
+.switch:disabled:not(:checked):after {
+  opacity: 0.6;
+}
+
+/* Base */
+
+.switch-primary {
+  background-color:-checked: rgb(0 114 245);
+  border-color:-checked: rgb(0 114 245);
+   focus-visible:outline-color: rgb(0 114 245);
+}
+
+.switch-secondary {
+  background-color:-checked: rgb(151 80 221);
+  border-color:-checked: rgb(151 80 221);
+   focus-visible:outline-color: rgb(151 80 221);
+}
+
+.switch-success {
+  background-color:-checked: rgb(23 201 100);
+  border-color:-checked: rgb(23 201 100);
+   focus-visible:outline-color: rgb(23 201 100);
+}
+
+.switch-error {
+  background-color:-checked: rgb(243 18 96);
+  border-color:-checked: rgb(243 18 96);
+   focus-visible:outline-color: rgb(243 18 96);
+}
+
+.switch-warning {
+  background-color:-checked: rgb(255 184 0);
+  border-color:-checked: rgb(255 184 0);
+   focus-visible:outline-color: rgb(255 184 0);
+}
+
+.switch-info {
+  background-color:-checked: rgb(3 183 219);
+  border-color:-checked: rgb(3 183 219);
+   focus-visible:outline-color: rgb(3 183 219);
+}
+
+/* bordered */
+
+.switch-bordered-primary {
+  background-color:-checked: rgb(0 114 245);
+  border-color:-checked: rgb(0 114 245);
+  border-color: rgb(0 114 245);
+  border-color:-hover: rgb(0 114 245);
+   focus-visible:outline-color: rgb(0 114 245);
+  /* background-color:-hover: var(--backgroundPrimary); */
+}
+
+.switch-bordered-secondary {
+  background-color:-checked: rgb(151 80 221);
+  border-color:-checked: rgb(151 80 221);
+  border-color: rgb(151 80 221);
+  border-color:-hover: rgb(151 80 221);
+   focus-visible:outline-color: rgb(151 80 221);
+}
+
+.switch-bordered-success {
+  background-color:-checked: rgb(23 201 100);
+  border-color:-checked: rgb(23 201 100);
+  border-color: rgb(23 201 100);
+  border-color:-hover: rgb(23 201 100);
+   focus-visible:outline-color: rgb(23 201 100);
+}
+
+.switch-bordered-error {
+  background-color:-checked: rgb(243 18 96);
+  border-color:-checked: rgb(243 18 96);
+  border-color: rgb(243 18 96);
+  border-color:-hover: rgb(243 18 96);
+   focus-visible:outline-color: rgb(243 18 96);
+}
+
+.switch-bordered-warning {
+  background-color:-checked: rgb(255 184 0);
+  border-color:-checked: rgb(255 184 0);
+  border-color: rgb(255 184 0);
+  border-color:-hover: rgb(255 184 0);
+   focus-visible:outline-color: rgb(255 184 0);
+}
+
+.switch-bordered-info {
+  background-color:-checked: rgb(3 183 219);
+  border-color:-checked: rgb(3 183 219);
+  border-color: rgb(3 183 219);
+  border-color:-hover: rgb(3 183 219);
+   focus-visible:outline-color: rgb(3 183 219);
+}
+
+/* Ghost */
+
+.switch-ghost-primary {
+  background-color:: rgb(252 252 252);;
+  --circle-color: rgb(226 226 226);
+  background-color:-hover: rgb(252 252 252);;
+  border-color:-hover: rgb(0 114 245);
+  background-color:-checked: rgb(0 114 245);
+   focus-visible:outline-color: rgb(0 114 245);
+}
+
+.switch-ghost-secondary {
+  background-color:: rgb(252 252 252);;
+  --circle-color: rgb(226 226 226);
+  background-color:-hover: rgb(252 252 252);;
+  border-color:-hover: rgb(151 80 221);
+  border-color:-checked: rgb(151 80 221);
+  background-color:-checked: rgb(151 80 221);
+   focus-visible:outline-color: rgb(151 80 221);
+}
+
+.switch-ghost-success {
+  background-color:: rgb(252 252 252);;
+  --circle-color: rgb(226 226 226);
+  background-color:-hover: rgb(252 252 252);;
+  border-color:-hover: rgb(23 201 100);
+  border-color:-checked: rgb(23 201 100);
+  background-color:-checked: rgb(23 201 100);
+   focus-visible:outline-color: rgb(23 201 100);
+}
+
+.switch-ghost-error {
+  background-color:: rgb(252 252 252);;
+  --circle-color: rgb(226 226 226);
+  background-color:-hover: rgb(252 252 252);;
+  border-color:-hover: rgb(243 18 96);
+  border-color:-checked: rgb(243 18 96);
+  background-color:-checked: rgb(243 18 96);
+   focus-visible:outline-color: rgb(243 18 96);
+}
+
+.switch-ghost-warning {
+  background-color:: rgb(252 252 252);;
+  --circle-color: rgb(226 226 226);
+  background-color:-hover: rgb(252 252 252);;
+  border-color:-hover: rgb(255 184 0);
+  border-color:-checked: rgb(255 184 0);
+  background-color:-checked: rgb(255 184 0);
+   focus-visible:outline-color: rgb(255 184 0);
+}
+
+.switch-ghost-info {
+  background-color:: rgb(252 252 252);;
+  --circle-color: rgb(226 226 226);
+  background-color:-hover: rgb(252 252 252);;
+  border-color:-hover: rgb(3 183 219);
+  border-color:-checked: rgb(3 183 219);
+  background-color:-checked: rgb(3 183 219);
+   focus-visible:outline-color: rgb(3 183 219);
+}
+
+/* Sizes */
+
+.switch-xs {
+   height: 1rem; /* 16px */ w-6;
+}
+
+.switch.switch-xs:checked {
+  --x: 8px;
+}
+.switch.switch-xs::after {
+   left-[1.4px] top-[1px] h-[12px] w-[12px];
+}
+
+.switch-sm {
+   height: 1.25rem; /* 20px */ w-8;
+}
+
+.switch.switch-sm:checked {
+  --x: 14px;
+}
+
+.switch.switch-sm::after {
+   left-[1.7px] top:2px; h-[13px] w-[13px];
+}
+
+.switch-md {
+   h-[21px] w-[38px];
+}
+
+.switch.switch-md::after {
+   left:2px; top:2px; h: 15px; w: 15px;
+}
+
+.switch-lg {
+  height: 1.75rem; /* 28px */ width: 3rem; /* 48px */ border-radius: 9999px;
+}
+
+.switch.switch-lg:checked {
+  --x: 22px;
+}
+
+.switch.switch-lg::after {
+   left-[2.5px] top-[2.5px] h-[20px] w-[20px];
+}
+
+.switch-xl {
+   height: 2rem; /* 32px */width: 3.5rem; /* 56px */ border-radius: 9999px;
+}
+
+.switch.switch-xl:checked {
+  --x: 26px;
+}
+
+.switch.switch-xl::after {
+   left-[2.5px] top-[3px] h-[23px] w-[23px];
+}

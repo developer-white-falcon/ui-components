@@ -1,0 +1,273 @@
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color:: rgb(252 252 252);;
+  border-color:: rgb(226 226 226);
+  background-color:-checked: rgb(0 114 245);
+  border-color:-checked: rgb(0 114 245);
+  border-color:-hover: rgb(219 219 219);
+  background-color:-hover: rgb(243 243 243);
+  rgb(255 255 255): rgb(255 255 255);
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+   position: relative; margin: 0px; display: flex; height: 1.25rem; /* 20px */ width: 1.25rem; /* 20px */ cursor: pointer; appearance: none; justify-items: start; justify-content: center; border-radius: 9999px;border-width: 1px; border-[var(border-color:)] bg-[var(background-color:)] vertical-align: top; accent-backgroundPrimary  focus:outline-width: 2px; focus-visible: outline-style: solid;focus-visible:outline-offset: 2px; focus-visible:outline-color: rgb(0 114 245);
+}
+.radio:checked {
+   border-[var(border-color:-checked)] bg-[var(background-color:-checked)];
+  0.3s: 0.3s;
+  0.6s: 0.6s;
+  cubic-bezier(0.2, 0.85, 0.32, 1.2): cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  1: 1;
+  43deg 43deg;
+}
+.radio:disabled {
+   cursor: not-allowed; border-color: rgb(219 219 219);
+ background-color: rgb(55 65 81); opacity: 0.5;
+}
+
+.radio:disabled + label {
+   cursor: not-allowed;
+}
+
+.radio:hover:not(:checked):not(:disabled) {
+   border-[var(border-color:-hover)] bg-[var(background-color:-hover)];
+}
+
+.radio:not(.switch):after {
+  opacity: var(1, 0);
+}
+.radio:checked {
+  1: 1;
+  --s: 0.5;
+}
+
+.radio::after {
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   position: relative; display: flex; height: 100%; width: 1.25rem; /* 20px */ border-radius: 9999px; bg-[var(rgb(255 255 255))] opacity: 0;  transition-duration: 150ms;  content: "";
+  transform: scale(var(--s, 0.7));
+}
+
+.radio-primary {
+   
+  background-color:-checked: rgb(0 114 245);
+  border-color:-checked: rgb(0 114 245);
+   focus-visible:outline-color: rgb(0 114 245);
+}
+
+.radio-secondary {
+  background-color:-checked: rgb(151 80 221);
+  border-color:-checked: rgb(151 80 221);
+   focus-visible:outline-color: rgb(151 80 221);
+}
+
+.radio-success {
+  background-color:-checked: rgb(23 201 100);
+  border-color:-checked: rgb(23 201 100);
+   focus-visible:outline-color: rgb(23 201 100);
+}
+
+.radio-error {
+  background-color:-checked: rgb(243 18 96);
+  border-color:-checked: rgb(243 18 96);
+   focus-visible:outline-color: rgb(243 18 96);
+}
+
+.radio-warning {
+  background-color:-checked: rgb(255 184 0);
+  border-color:-checked: rgb(255 184 0);
+   focus-visible:outline-color: rgb(255 184 0);
+}
+
+.radio-info {
+  background-color:-checked: rgb(3 183 219);
+  border-color:-checked: rgb(3 183 219);
+   focus-visible:outline-color: rgb(3 183 219);
+}
+
+/* bordered */
+.radio-bordered-primary {
+  border-color:: rgb(0 114 245);
+  background-color:-checked: rgb(0 114 245);
+  border-color:-checked: rgb(0 114 245);
+  border-color:-hover: rgb(0 114 245);
+   focus-visible:outline-color: rgb(0 114 245);
+}
+
+.radio-bordered-secondary {
+  border-color:: rgb(151 80 221);
+  background-color:-checked: rgb(151 80 221);
+  border-color:-checked: rgb(151 80 221);
+  border-color:-hover: rgb(151 80 221);
+   focus-visible:outline-color: rgb(151 80 221);
+}
+
+.radio-bordered-success {
+  border-color:: rgb(23 201 100);
+  background-color:-checked: rgb(23 201 100);
+  border-color:-checked: rgb(23 201 100);
+  border-color:-hover: rgb(23 201 100);
+   focus-visible:outline-color: rgb(23 201 100);
+}
+
+.radio-bordered-error {
+  border-color:: rgb(243 18 96);
+  background-color:-checked: rgb(243 18 96);
+  border-color:-checked: rgb(243 18 96);
+  border-color:-hover: rgb(243 18 96);
+   focus-visible:outline-color: rgb(243 18 96);
+}
+
+.radio-bordered-warning {
+  border-color:: rgb(255 184 0);
+  background-color:-checked: rgb(255 184 0);
+  border-color:-checked: rgb(255 184 0);
+  border-color:-hover: rgb(255 184 0);
+   focus-visible:outline-color: rgb(255 184 0);
+}
+
+.radio-bordered-info {
+  border-color:: rgb(3 183 219);
+  background-color:-checked: rgb(3 183 219);
+  border-color:-checked: rgb(3 183 219);
+  border-color:-hover: rgb(3 183 219);
+   focus-visible:outline-color: rgb(3 183 219);
+}
+
+/* Ghost */
+
+.radio-ghost-primary {
+  background-color:-checked: rgb(0 114 245);
+  border-color:-checked: rgb(0 114 245);
+  border-color:-hover: rgb(0 114 245);
+   focus-visible:outline-color: rgb(0 114 245);
+}
+
+.radio-ghost-secondary {
+  background-color:-checked: rgb(151 80 221);
+  border-color:-checked: rgb(151 80 221);
+  border-color:-hover: rgb(151 80 221);
+   focus-visible:outline-color: rgb(151 80 221);
+}
+
+.radio-ghost-success {
+  background-color:-checked: rgb(23 201 100);
+  border-color:-checked: rgb(23 201 100);
+  border-color:-hover: rgb(23 201 100);
+   focus-visible:outline-color: rgb(23 201 100);
+}
+
+.radio-ghost-error {
+  background-color:-checked: rgb(243 18 96);
+  border-color:-checked: rgb(243 18 96);
+  border-color:-hover: rgb(243 18 96);
+   focus-visible:outline-color: rgb(243 18 96);
+}
+
+.radio-ghost-warning {
+  background-color:-checked: rgb(255 184 0);
+  border-color:-checked: rgb(255 184 0);
+  border-color:-hover: rgb(255 184 0);
+   focus-visible:outline-color: rgb(255 184 0);
+}
+
+.radio-ghost-info {
+  background-color:-checked: rgb(3 183 219);
+  border-color:-checked: rgb(3 183 219);
+  border-color:-hover: rgb(3 183 219);
+   focus-visible:outline-color: rgb(3 183 219);
+}
+/* Sizes */
+
+.radio-xs {
+   height: 0.75rem; /* 12px */w-3;
+}
+
+.radio.radio-xs::after {
+   h-[10px] w-[10px];
+}
+
+.radio-sm {
+   height: 1rem; /* 16px */ width: 1rem; /* 16px */;
+}
+
+.radio.radio-sm::after {
+   h-[14px] w-[14px];
+}
+
+.radio-md {
+   height: 1.25rem; /* 20px */ width: 1.25rem; /* 20px */
+}
+
+.radio.radio-md::after {
+   width: 1.25rem; /* 20px */
+}
+
+.radio-lg {
+   height: 1.5rem; /* 24px */w-6;
+}
+
+.radio.radio-lg::after {
+   h-[22px] w-[22px];
+}
+
+.radio-xl {
+  height: 1.75rem; /* 28px */ width: 1.75rem; /* 28px */
+}
+
+.radio.radio-xl::after {
+   h-[26px] w-[26px];
+}
+
+.radio-solid {
+  border-color:-hover: transparent;
+  background-color:-hover: rgb(var(--gray-5));
+   border-color: transparent; background-color: rgb(156 163 175);
+}
+
+.radio-solid-primary {
+  border-color:-hover: transparent;
+  background-color:-hover: rgb(var(--gray-5));
+  background-color:-checked: rgb(0 114 245);
+  border-color:-checked: rgb(0 114 245);
+   border-color: transparent; background-color: rgb(156 163 175);
+}
+
+.radio-solid-secondary {
+  border-color:-hover: transparent;
+  background-color:-hover: rgb(var(--gray-5));
+  background-color:-checked: rgb(151 80 221);
+  border-color:-checked: rgb(151 80 221);
+   border-color: transparent; background-color: rgb(156 163 175);
+}
+
+.radio-solid-success {
+  border-color:-hover: transparent;
+  background-color:-hover: rgb(var(--gray-5));
+  background-color:-checked: rgb(23 201 100);
+  border-color:-checked: rgb(23 201 100);
+   border-color: transparent; background-color: rgb(156 163 175);
+}
+
+.radio-solid-warning {
+  border-color:-hover: transparent;
+  background-color:-hover: rgb(var(--gray-5));
+  background-color:-checked: rgb(255 184 0);
+  border-color:-checked: rgb(255 184 0);
+   border-color: transparent; background-color: rgb(156 163 175);
+}
+
+.radio-solid-error {
+  border-color:-hover: transparent;
+  background-color:-hover: rgb(var(--gray-5));
+  background-color:-checked: rgb(243 18 96);
+  border-color:-checked: rgb(243 18 96);
+   border-color: transparent; background-color: rgb(156 163 175);
+}
+
+.radio-solid-info {
+  border-color:-hover: transparent;
+  background-color:-hover: rgb(var(--gray-5));
+  background-color:-checked: rgb(3 183 219);
+  border-color:-checked: rgb(3 183 219);
+   border-color: transparent; background-color: rgb(156 163 175);
+}

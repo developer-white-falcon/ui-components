@@ -1,0 +1,281 @@
+.input-file {
+  height: 2.5rem; /* 40px */
+  width: 100%;
+  max-width: 20rem; /* 320px */
+  appearance: none;
+  overflow: hidden;
+  border-radius: 0.75rem; /* 12px */ /* 12px */
+  border-width: 2px;
+  border-color: rgb(75 85 99);
+  background-color: rgb(243 244 246);
+  padding-right: 0.75rem; /* 12px */
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+  color: rgb(28 28 28);
+}
+
+.input-file:focus {
+  outline-width: 2px;
+}
+
+.input-file:focus-visible {
+  outline-style: solid;
+}
+
+.input-file:focus-visible {
+  outline-offset: 2px;
+}
+
+.input-file:focus-visible {
+  background-color: rgb(75, 85, 99);
+}
+
+.input-file::-webkit-file-upload-button,
+.input-file::file-selector-button {
+  margin-right: 1rem; /* 16px */
+  display: inline-flex;
+  height: 100%;
+  cursor: pointer;
+  user-select: none;
+  justify-items: start;
+  justify-content: center;
+  border-style: none;
+  background-color: rgb(243 243 243);
+  padding-left: 1.25rem; /* 20px */
+  padding-right: 1.25rem; /* 20px */
+  text-align: center;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: 500;
+  color: rgb(28 28 28);
+}
+
+.input-file-primary {
+  border-color: rgb(0 114 245);
+}
+
+.input-file-primary:focus-visible {
+  outline-color: rgb(0 114 245);
+}
+
+.input-file-primary::-webkit-file-upload-button {
+  background-color: rgb(0 114 245);
+  color: rgb(255 255 255);
+}
+
+.input-file-primary::-webkit-file-upload-button:focus-visible {
+  outline-color: rgb(0 114 245);
+}
+
+.input-file-secondary {
+  border-color: rgb(151 80 221);
+}
+
+.input-file-secondary:focus-visible {
+  outline-color: rgb(151 80 221);
+}
+
+.input-file-secondary::-webkit-file-upload-button {
+  background-color: rgb(151 80 221);
+  color: rgb(255 255 255);
+}
+
+.input-file-secondary::-webkit-file-upload-button:focus-visible {
+  outline-color: rgb(151 80 221);
+}
+
+.input-file-success {
+  border-color: rgb(23 201 100);
+}
+
+.input-file-success:focus-visible {
+  outline-color: rgb(23 201 100);
+}
+
+.input-file-success::-webkit-file-upload-button {
+  background-color: rgb(23 201 100);
+  color: rgb(0 0 0);
+}
+
+.input-file-success::-webkit-file-upload-button:focus-visible {
+  outline-color: rgb(23 201 100);
+}
+
+.input-file-error {
+  border-color: rgb(243 18 96);
+}
+
+.input-file-error:focus-visible {
+  outline-color: rgb(243 18 96);
+}
+
+.input-file-error::-webkit-file-upload-button {
+  background-color: rgb(243 18 96);
+  color: rgb(255 255 255);
+}
+
+.input-file-error::-webkit-file-upload-button:focus-visible {
+  outline-color: rgb(243 18 96);
+}
+
+.input-file-warning {
+  border-color: rgb(255 184 0);
+}
+
+.input-file-warning:focus-visible {
+  outline-color: rgb(255 184 0);
+}
+
+.input-file-warning::-webkit-file-upload-button {
+  background-color: rgb(255 184 0);
+  color: rgb(0 0 0);
+}
+
+.input-file-warning::-webkit-file-upload-button:focus-visible {
+  outline-color: rgb(255 184 0);
+}
+
+.input-file-info {
+  border-color: rgb(3 183 219);
+}
+
+.input-file-info:focus-visible {
+  outline-color: rgb(3 183 219);
+}
+
+.input-file-info::-webkit-file-upload-button {
+  background-color: rgb(3 183 219);
+  color: rgb(255 255 255);
+}
+
+.input-file-info::-webkit-file-upload-button:focus-visible {
+  outline-color: rgb(3 183 219);
+}
+
+.input-file-xs {
+  height: 1.5rem; /* 24px */
+  border-radius: 0.5rem; /* 8px */
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+
+.input-file-xs::-webkit-file-upload-button {
+  padding-left: 0.5rem; /* 8px */
+  padding-right: 0.5rem; /* 8px */
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+
+.input-file-sm {
+  height: 2rem; /* 32px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.input-file-sm::-webkit-file-upload-button {
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem; /* 12px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.input-file-md {
+  height: 2.5rem; /* 40px */
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.input-file-md::-webkit-file-upload-button {
+  padding-left: 1.25rem; /* 20px */
+  padding-right: 1.25rem; /* 20px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.input-file-lg {
+  height: 2.75rem; /* 44px */
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.input-file-lg::-webkit-file-upload-button {
+  padding-left: 1.5rem; /* 24px */
+  padding-right: 1.5rem; /* 24px */
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.input-file-xl {
+  height: 3rem; /* 48px */
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.input-file-xl::-webkit-file-upload-button {
+  padding-left: 1.5rem; /* 24px */
+  padding-right: 1.5rem; /* 24px */
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.input-file:disabled {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.5;
+}
+
+/* Firefox */
+
+.input-file-primary::file-selector-button {
+  background-color: rgb(0 114 245);
+  color: rgb(255 255 255);
+}
+
+.input-file-primary::file-selector-button:focus-visible {
+  outline-color: rgb(0 114 245);
+}
+
+.input-file-secondary::file-selector-button {
+  background-color: rgb(151 80 221);
+  color: rgb(255 255 255);
+}
+
+.input-file-secondary::file-selector-button:focus-visible {
+  outline-color: rgb(151 80 221);
+}
+
+.input-file-success::file-selector-button {
+  background-color: rgb(23 201 100);
+  color: rgb(0 0 0);
+}
+
+.input-file-success::file-selector-button:focus-visible {
+  outline-color: rgb(23 201 100);
+}
+
+.input-file-error::file-selector-button {
+  background-color: rgb(243 18 96);
+  color: rgb(255 255 255);
+}
+
+.input-file-error::file-selector-button:focus-visible {
+  outline-color: rgb(243 18 96);
+}
+
+.input-file-warning::file-selector-button {
+  background-color: rgb(255 184 0);
+  color: rgb(0 0 0);
+}
+
+.input-file-warning::file-selector-button:focus-visible {
+  outline-color: rgb(255 184 0);
+}
+
+.input-file-info::file-selector-button {
+  background-color: rgb(3 183 219);
+  color: rgb(255 255 255);
+}
+
+.input-file-info::file-selector-button:focus-visible {
+  outline-color: rgb(3 183 219);
+}

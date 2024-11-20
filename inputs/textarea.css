@@ -1,0 +1,230 @@
+.textarea {
+  height: fit-content;
+  width: 100%;
+  max-width: 20rem; /* 320px */
+  border-radius: 0.75rem; /* 12px */
+  border-width: 2px;
+  border-color: rgb(75 85 99);
+  background-color: rgb(243 244 246);
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem; /* 12px */
+  padding-top: 0.625rem; /* 10px */
+  padding-bottom: 0.625rem; /* 10px */
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+  color: rgb(28 28 28);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Colors */
+.textarea-primary {
+  border-color: rgb(0 114 245);
+}
+
+.textarea-secondary {
+  border-color: rgb(151 80 221);
+}
+
+.textarea-success {
+  border-color: rgb(23 201 100);
+}
+
+.textarea-warning {
+  border-color: rgb(255 184 0);
+}
+
+.textarea-error {
+  border-color: rgb(243 18 96);
+}
+
+.textarea-info {
+  border-color: rgb(3 183 219);
+}
+
+/* Ghost */
+
+.textarea-ghost-primary {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.textarea-ghost-primary:hover {
+  border-color: rgb(0 114 245);
+}
+
+.textarea-ghost-primary:focus {
+  border-color: rgb(0 114 245);
+}
+
+.textarea-ghost-secondary {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.textarea-ghost-secondary:hover {
+  border-color: rgb(151 80 221);
+}
+
+.textarea-ghost-primary:focus {
+  border-color: rgb(151 80 221);
+}
+
+.textarea-ghost-success {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.textarea-ghost-success:hover {
+  border-color: rgb(23 201 100);
+}
+
+.textarea-ghost-success:focus {
+  border-color: rgb(23 201 100);
+}
+
+.textarea-ghost-warning {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.textarea-ghost-warning:hover {
+  border-color: rgb(255 184 0);
+}
+
+.textarea-ghost-warning:focus {
+  border-color: rgb(255 184 0);
+}
+
+.textarea-ghost-error {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.textarea-ghost-error:hover {
+  border-color: rgb(243 18 96);
+}
+
+.textarea-ghost-error:focus {
+  border-color: rgb(243 18 96);
+}
+
+.textarea-ghost-info {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.textarea-ghost-info:hover {
+  border-color: rgb(3 183 219);
+}
+
+.textarea-ghost-info:focus {
+  border-color: rgb(3 183 219);
+}
+
+/* Size */
+
+/* Extra */
+.textarea::placeholder {
+  color: rgb(150 150 150);
+}
+
+.textarea:disabled {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.5;
+}
+
+.textarea-block {
+  max-width: 100%;
+}
+
+/* Solid */
+
+.textarea-solid {
+  border-color: transparent;
+  background-color: rgb(156 163 175);
+  color: rgba(23 23 23);
+}
+
+.textarea-solid::placeholder {
+  color: rgba(133 133 133);
+}
+
+.textarea-solid-primary {
+  border-color: transparent;
+  background-color: rgb(96 165 250);
+  color: rgb(0 106 220);
+}
+
+.textarea-solid-primary::placeholder {
+  color: rgb(0 145 255);
+}
+
+.textarea-solid-secondary {
+  border-color: transparent;
+  background-color: rgb(192 132 252);
+  color: rgb(121 58 175);
+}
+
+.textarea-solid-secondary::placeholder {
+  color: rgb(142 78 198);
+}
+
+.textarea-solid-success {
+  border-color: transparent;
+  background-color: rgb(74 222 128);
+  color: rgb(24 121 78);
+}
+
+.textarea-solid-success::placeholder {
+  color: rgb(48 164 108);
+}
+
+.textarea-solid-warning {
+  border-color: transparent;
+  background-color: rgb(250 204 21);
+  color: rgb(148 104 0);
+}
+
+.textarea-solid-warning::placeholder {
+  color: rgb(148 104 0);
+}
+
+.textarea-solid-error {
+  border-color: transparent;
+  background-color: rgb(248 113 113);
+  color: rgb(205 43 49);
+}
+
+.textarea-solid-error::placeholder {
+  color: rgb(229 72 77);
+}
+
+.textarea-solid-info {
+  border-color: transparent;
+  background-color: rgb(34 211 238);
+  color: rgb(12 119 146);
+}
+
+.textarea-solid-info::placeholder {
+  color: rgb(5 162 194);
+}

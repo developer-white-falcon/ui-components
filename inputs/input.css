@@ -1,0 +1,265 @@
+.input {
+  height: 2.5rem; /* 40px */
+  width: 100%;
+  max-width: 20rem; /* 320px */
+  border-radius: 0.75rem; /* 12px */
+  border-width: 2px;
+  border-color: rgb(75 85 99);
+  background-color: rgb(243 244 246);
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem; /* 12px */
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+  color: rgb(28 28 28);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Colors */
+.input-primary {
+  border-color: rgb(0 114 245);
+}
+
+.input-secondary {
+  border-color: rgb(151 80 221);
+}
+
+.input-success {
+  border-color: rgb(23 201 100);
+}
+
+.input-warning {
+  border-color: rgb(255 184 0);
+}
+
+.input-error {
+  border-color: rgb(243 18 96);
+}
+
+.input-info {
+  border-color: rgb(3 183 219);
+}
+
+/* Ghost */
+
+.input-ghost-primary {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.input-ghost-primary:hover {
+  border-color: rgb(0 114 245);
+}
+
+.input-ghost-primary:focus {
+  border-color: rgb(0 114 245);
+}
+
+.input-ghost-secondary {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.input-ghost-secondary:hover {
+  border-color: rgb(151 80 221);
+}
+
+.input-ghost-secondary:focus {
+  border-color: rgb(151 80 221);
+}
+
+.input-ghost-success {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.input-ghost-success:hover {
+  border-color: rgb(23 201 100);
+}
+
+.input-ghost-success:focus {
+  border-color: rgb(23 201 100);
+}
+
+.input-ghost-warning {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.input-ghost-warning:hover {
+  border-color: rgb(255 184 0);
+}
+
+.input-ghost-warning:focus {
+  border-color: rgb(255 184 0);
+}
+
+.input-ghost-error {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.input-ghost-error:hover {
+  border-color: rgb(243 18 96);
+}
+
+.input-ghost-error:focus {
+  border-color: rgb(243 18 96);
+}
+
+.input-ghost-info {
+  background-color: transparent;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.input-ghost-info:hover {
+  border-color: rgb(3 183 219);
+}
+
+.input-ghost-info:focus {
+  border-color: rgb(3 183 219);
+}
+
+/* Size */
+
+.input-xs {
+  height: 1.5rem; /* 24px */
+  border-radius: 0.5rem; /* 8px */
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+
+.input-sm {
+  height: 2rem; /* 32px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.input-md {
+  height: 2.5rem; /* 40px */
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.input-lg {
+  height: 2.75rem; /* 44px */
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.input-xl {
+  height: 3rem; /* 48px */
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+/* Extra */
+.input::placeholder {
+  color: rgb(150 150 150);
+}
+
+.input-rounded {
+  border-radius: 9999px;
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+}
+
+.input:disabled {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.5;
+}
+
+.input-block {
+  max-width: 100%;
+}
+
+/* Solid */
+
+.input-solid {
+  border-color: transparent;
+  background-color: rgb(156 163 175);
+  color: rgb(23 23 23);
+}
+
+.input-solid::placeholder {
+  color: rgb(133 133 133);
+}
+
+.input-solid-primary {
+  border-color: transparent;
+  background-color: rgb(96 165 250);
+  color: rgb(0 106 220);
+}
+
+.input-solid-primary::placeholder {
+  color: rgb(0 145 255);
+}
+
+.input-solid-secondary {
+  border-color: transparent;
+  background-color: rgb(192 132 252);
+  color: rgb(121 58 175);
+}
+
+.input-solid-secondary::placeholder {
+  color: rgb(142 78 198);
+}
+
+.input-solid-success {
+  border-color: transparent;
+  background-color: rgb(74 222 128);
+  color: rgb(24 121 78);
+}
+
+.input-solid-success::placeholder {
+  color: rgb(48 164 108);
+}
+
+.input-solid-warning {
+  border-color: transparent;
+  background-color: rgb(250 204 21);
+  color: rgb(148 104 0);
+}
+
+.input-solid-warning::placeholder {
+  color: rgb(148 104 0);
+}
+
+.input-solid-error {
+  border-color: transparent;
+  background-color: rgb(248 113 113);
+  color: rgb(205 43 49);
+}
+
+.input-solid-error::placeholder {
+  color: rgb(229 72 77);
+}
+
+.input-solid-info {
+  border-color: transparent;
+  background-color: rgb(34 211 238);
+  color: rgb(4 49 60);
+}
+
+.input-solid-info::placeholder {
+  color: rgb(8 148 179);
+}

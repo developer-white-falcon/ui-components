@@ -1,0 +1,67 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem; /* 8px */
+  overflow-x: auto;
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem; /* 12px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  color: rgb(88 87 87);
+}
+
+@media (min-width: 640px) {
+  .breadcrumbs {
+    padding: 0px;
+  }
+}
+
+.breadcrumbs > ul > li > a {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+}
+
+.breadcrumbs > ul {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  white-space: nowrap;
+}
+
+.breadcrumbs > ul > li {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  justify-items: start;
+}
+
+.breadcrumbs > ul > :not(li:last-child) > a:hover {
+  text-decoration-line: underline;
+}
+
+.breadcrumbs > ul > li + *:before {
+  margin-left: 0.5rem; /* 8px */
+  margin-right: 0.75rem; /* 12px */
+  display: block;
+  opacity: 0.4;
+  content: "/";
+}
+
+.breadcrumbs-active {
+  color: rgb(150 150 150);
+}
+
+.breadcrumbs > ul > li:last-child {
+  cursor: auto;
+  color: rgb(150 150 150);
+}
+
+.breadcrumbs > ul > li:first-child {
+  cursor: pointer;
+  color: rgb(88 87 87);
+}
+
+.breadcrumbs > ul > li:first-child:hover {
+  text-decoration-line: underline;
+}

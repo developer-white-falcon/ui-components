@@ -1,0 +1,85 @@
+.drawer-toggle {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  appearance: none;
+  opacity: 0;
+}
+
+html:has(.drawer-toggle:checked) {
+  overflow: hidden;
+}
+
+.drawer {
+  background-color: rgb(243 244 246);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  height: 100vh;
+  width: 100%;
+  max-width: 20rem; /* 320px */
+  transform: translateX(100%);
+
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.drawer-right {
+  right: 0px;
+  left: auto;
+  transform: translateX(100%);
+}
+
+.drawer-top {
+  transform: translateY(-100%);
+  top: 0px;
+  bottom: 0px;
+  height: fit-content;
+  max-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+}
+
+.drawer-bottom {
+  transform: translateY(100%);
+  top: auto;
+  bottom: 0px;
+  height: fit-content;
+  max-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+}
+
+.drawer-content {
+  padding: 1rem; /* 16px */
+}
+
+.drawer-toggle:checked ~ .drawer {
+  transform: translateX(0);
+}
+
+.overlay {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  visibility: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9998;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
+.drawer-toggle:checked ~ .overlay {
+  visibility: visible;
+  opacity: 1;
+}

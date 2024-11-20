@@ -1,0 +1,110 @@
+.menu {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem; /* 8px */
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* 8px */
+}
+
+.menu-title {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+  font-weight: 400;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem; /* 6px */
+}
+
+.menu-item {
+  transition-property: transform, opacity, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  flex-direction: row;
+  justify-items: start;
+  gap: 0.5rem; /* 8px */
+  border-radius: 0.5rem; /* 8px */
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+  padding-top: 0.5rem; /* 8px */
+  padding-bottom: 0.5rem; /* 8px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  color: rgb(28 28 28);
+  will-change: transform;
+}
+
+.menu-item:hover {
+  background-color: rgb(156 163 175);
+}
+
+.menu-item:active {
+  transform: scale(0.97);
+  background-color: rgb(107 114 128);
+}
+
+.menu-item-disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: rgb(150 150 150);
+}
+
+.menu-item-no-animation {
+  transition-property: none;
+}
+
+.menu-item-no-animation:active {
+  transform: scale(1);
+}
+
+.menu-item.menu-active {
+  background-color: rgb(107 114 128);
+  transition-property: none;
+}
+
+.menu-item.menu-active:active {
+  transform: scale(1);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-item-collapse {
+  transition: padding 0.15s, grid-template-rows 0.15s;
+  display: grid;
+  grid-template-rows: none;
+  overflow: hidden;
+}
+
+.menu-toggle:checked ~ .menu-item-collapse {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  border-style: none;
+}
+
+.menu-item:focus-within ~ .menu-item-collapse {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  border-style: none;
+}
+
+.menu-icon {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+}
+
+.menu-toggle:checked ~ .menu-item .menu-icon {
+  transform: rotate(90deg);
+}

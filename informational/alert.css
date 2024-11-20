@@ -1,0 +1,31 @@
+.alert {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-items: start;
+  gap: 0.75rem; /* 12px */
+  border-radius: 0.75rem; /* 12px */
+  background-color: rgb(156 163 175);
+  padding: 1rem; /* 16px */
+}
+
+.alert-info {
+  background-color: rgb(225 240 255);
+}
+
+.alert-success {
+  background-color: rgb(221 243 228);
+}
+
+.alert-warning {
+  background-color: rgb(255 248 187);
+}
+
+.alert-error {
+  background-color: rgb(255 229 229);
+}
+
+.alert-info {
+  background-color: rgb(216 243 246);
+}

@@ -1,0 +1,73 @@
+.dot {
+  display: inline-flex;
+  height: 0.625rem; /* 10px */
+  min-height: 0.625rem; /* 10px */
+  width: 0.625rem; /* 10px */
+  min-width: 0.625rem; /* 10px */
+  user-select: none;
+  border-radius: 50%;
+  background-color: rgb(199 199 199) leading-3;
+}
+
+.dot-primary {
+  background-color: rgb(0 114 245);
+}
+
+.dot-secondary {
+  background-color: rgb(151 80 221);
+}
+
+.dot-success {
+  background-color: rgb(23 201 100);
+}
+
+.dot-error {
+  background-color: rgb(243 18 96);
+}
+
+.dot-warning {
+  background-color: rgb(255 184 0);
+}
+
+.dot-info {
+  background-color: rgb(3 183 219);
+}
+.dot-xs {
+  height: 0.375rem; /* 6px */
+  min-height: 0.438rem; /* 7px */
+  width: 0.375rem; /* 6px */
+  min-width: 0.438rem; /* 7px */
+  line-height: 0.5rem; /* 8px */
+}
+
+.dot-sm {
+  height: 0.5rem; /* 8px */
+  min-height: 0.5rem; /* 8px */
+  width: 0.5rem; /* 8px */
+  min-width: 0.5rem; /* 8px */
+  line-height: 0.563rem; /* 9px */
+}
+
+.dot-md {
+  height: 0.625rem; /* 10px */
+  min-height: 0.625rem; /* 10px */
+  width: 0.625rem; /* 10px */
+  min-width: 0.625rem; /* 10px */
+  line-height: 0.688rem; /* 11px */
+}
+
+.dot-lg {
+  height: 0.75rem; /* 12px */
+  min-height: 0.75rem; /* 12px */
+  width: 0.75rem; /* 12px */
+  min-width: 0.75rem; /* 12px */
+  line-height: 0.813rem; /* 13px */
+}
+
+.dot-xl {
+  height: 0.875rem; /* 14px */
+  min-height: 0.875rem; /* 14px */
+  width: 0.875rem; /* 14px */
+  min-width: 0.875rem; /* 14px */
+  line-height: 0.938rem; /* 15px */
+}

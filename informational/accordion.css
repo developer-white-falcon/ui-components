@@ -1,0 +1,171 @@
+.accordion-toggle {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+}
+
+.accordion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion:focus {
+  outline-width: 2px;
+}
+
+.accordion:focus-visible {
+  background-color: rgb(75, 85, 99);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.accordion-group-secondary .accordion-title {
+  background-color: rgb(243 243 243);
+}
+
+.accordion-group-bordered {
+  border-color: rgb(75 85 99);
+  overflow: auto;
+  border-radius: 0.75rem; /* 12px */ /* 12px */
+  border-width: 1px;
+}
+
+.accordion-title {
+  border-color: rgb(75 85 99);
+  background-color: rgb(243 244 246);
+  position: relative;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  flex-direction: column;
+  border-bottom-width: 1px;
+  padding-top: 1.25rem; /* 20px */
+  padding-bottom: 1.25rem; /* 20px */
+  text-align: left;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 600;
+  transition-property: none;
+}
+
+.accordion-group.accordion-group-bordered
+  .accordion:last-child
+  .accordion-toggle:checked
+  ~ .accordion-content,
+.accordion-group.accordion-group-bordered
+  .accordion:last-child:not(.accordion-open)
+  .accordion-toggle:not(:checked)
+  ~ .accordion-title {
+  border-style: none;
+}
+
+.accordion-group.accordion-group-bordered
+  .accordion:last-child:not(:has(.accordion-toggle))
+  .accordion-content,
+.accordion-group.accordion-group-bordered
+  .accordion:last-child:not(:focus):not(:has(.accordion-toggle))
+  .accordion-title {
+  border-style: none;
+}
+
+.accordion-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-content {
+  transition: padding 200ms, grid-template-rows 200ms;
+  display: grid;
+  grid-template-rows: none;
+  overflow: hidden;
+}
+
+.accordion-group.accordion-group-bordered
+  .accordion:last-child.accordion-open
+  .accordion-content {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  border-style: none;
+  padding-top: 1.25rem; /* 20px */
+  padding-bottom: 1.25rem; /* 20px */
+}
+
+.accordion-group .accordion.accordion-open .accordion-content {
+  border-color: rgb(75 85 99);
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  border-bottom-width: 1px;
+  padding-top: 1.25rem; /* 20px */
+  padding-bottom: 1.25rem; /* 20px */
+}
+
+.accordion-toggle:checked ~ .accordion-content {
+  border-color: rgb(75 85 99);
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  border-bottom-width: 1px;
+  padding-top: 1.25rem; /* 20px */
+  padding-bottom: 1.25rem; /* 20px */
+}
+
+.accordion:focus .accordion-content {
+  border-color: rgb(75 85 99);
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  border-bottom-width: 1px;
+  padding-top: 1.25rem; /* 20px */
+  padding-bottom: 1.25rem; /* 20px */
+}
+
+.accordion-group.accordion-group-hover .accordion-title,
+.accordion-group.accordion-group-bordered .accordion-title,
+.accordion-group.accordion-group-hover .accordion-content,
+.accordion-group.accordion-group-bordered .accordion-content {
+  padding-left: 1.25rem; /* 20px */
+  padding-right: 1.25rem; /* 20px */
+}
+
+.accordion-group.accordion-group-hover
+  > .accordion
+  .accordion-toggle:checked
+  ~ .accordion-title,
+.accordion-group.accordion-group-hover .accordion:focus .accordion-title,
+.accordion-group.accordion-group-hover
+  > .accordion.accordion-open
+  .accordion-title {
+  background-color: rgb(243 243 243);
+}
+
+.accordion-group.accordion-group-hover > .accordion .accordion-title:hover {
+  background-color: rgb(243 243 243);
+}
+
+.accordion-icon {
+  position: absolute;
+  right: 1rem; /* 16px */
+  top: 1.5rem; /* 24px */
+
+  z-index: 10;
+  height: 1.25rem; /* 20px */
+  width: 1.25rem; /* 20px */
+  user-select: none;
+  fill: rgb(150 150 150);
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 200ms;
+}
+
+.accordion:not(.accordion-open) .accordion-toggle:checked ~ .accordion-icon,
+.accordion:not(.accordion-open)
+  .accordion-toggle:checked
+  ~ .accordion-title
+  .accordion-icon,
+.accordion:focus .accordion-icon {
+  transform: rotate(90deg);
+}
+
+.accordion.accordion-open ~ .accordion-icon,
+.accordion.accordion-open .accordion-title .accordion-icon {
+  transform: rotate(90deg);
+}

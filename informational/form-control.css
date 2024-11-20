@@ -1,0 +1,38 @@
+.form-group {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.75rem; /* 12px */
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem; /* 6px */
+}
+
+.form-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0.25rem; /* 4px */
+  padding-right: 0.25rem; /* 4px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  color: rgb(28 28 28);
+}
+
+.form-label-alt {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+  color: rgb(88 87 87);
+}
+
+.form-control {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 0.375rem; /* 6px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}

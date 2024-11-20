@@ -1,0 +1,429 @@
+.popover {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  text-align: left;
+}
+
+.popover-trigger {
+  display: inline-flex;
+}
+
+.popover-content {
+  transition-property: transform, opacity, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  right: 100%;
+  z-index: 49;
+  display: flex;
+  width: 14rem; /* 224px */
+
+  transform-origin: top;
+  transform: translateY(0.5rem);
+  transform: translateX(50%);
+  transform: scale(0.95);
+
+  flex-direction: column;
+  border-radius: 0.75rem; /* 12px */
+  border-width: 1px;
+  border-color: transparent;
+  background-color: rgb(243 243 243);
+  padding: 0.5rem; /* 8px */
+  opacity: 0;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  will-change: transform;
+}
+
+.popover-bottom-center {
+  visibility: hidden;
+  left: 50%;
+  right: 100%;
+  top: 100%;
+  transform-origin: top;
+  transform: translateY(0.5rem);
+  transform: translateX(50%);
+}
+
+.popover-bottom-right {
+  visibility: hidden;
+  left: 0px;
+  transform-origin: top left;
+  transform: translateY(0.5rem);
+  transform: translateX(0px);
+}
+
+.popover-bottom-left {
+  visibility: hidden;
+  right: 0px;
+  left: auto;
+  transform-origin: top right;
+  transform: translateY(0.5rem);
+  transform: translateX(0px);
+}
+.popover-top-center {
+  visibility: hidden;
+  left: 50%;
+  right: 100%;
+  bottom: 100%;
+  transform-origin: bottom;
+  transform: translateY(0.5rem);
+  transform: translateX(50%);
+}
+
+.popover-top-right {
+  visibility: hidden;
+  left: 50%;
+  bottom: 100%;
+  margin-left: 50%;
+  transform-origin: bottom left;
+  transform: translateY(0.5rem);
+  transform: translateX(0px);
+}
+
+.popover-top-left {
+  visibility: hidden;
+  left: 50%;
+  bottom: 100%;
+  right: 0px;
+  margin-left: auto;
+  transform-origin: bottom right;
+  transform: translateY(0.5rem);
+  transform: translateX(0px);
+}
+
+.popover-left {
+  visibility: hidden;
+  bottom: auto;
+  top: 3rem; /* 48px */
+  right: 100%;
+  left: auto;
+  transform-origin: right;
+  transform: translateY(50%);
+  transform: translateX(0.5rem);
+}
+
+.popover-right {
+  visibility: hidden;
+  bottom: auto;
+  top: 3rem; /* 48px */
+  left: 100%;
+  transform-origin: left;
+  transform: translateY(50%);
+  transform: translateX(0.5rem);
+}
+
+.popover-left-bottom {
+  visibility: hidden;
+  right: 100%;
+  left: auto;
+  margin-top: 0px;
+  transform-origin: top right;
+  transform: translateY(2.5rem);
+  transform: translateX(0.5rem);
+}
+
+.popover-right-bottom {
+  visibility: hidden;
+  left: 100%;
+  transform-origin: top left;
+  transform: translateY(2.5rem);
+  transform: translateX(0.5rem);
+}
+
+.popover-left-top {
+  visibility: hidden;
+  right: 100%;
+  left: auto;
+  bottom: 0px;
+  transform-origin: bottom right;
+  transform: translateY(1.25rem);
+  transform: translateX(0.5rem);
+}
+
+.popover-right-top {
+  visibility: hidden;
+  left: 100%;
+  bottom: 0px;
+  transform-origin: bottom left;
+  transform: translateY(1.25rem);
+  transform: translateX(0.5rem);
+}
+
+.popover-open .popover-content,
+.popover-open .popover-bottom-center,
+.popover .popover-trigger:focus ~ .popover-content,
+.popover-open .popover-bottom-center,
+.popover-hover:hover .popover-trigger ~ .popover-content,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-bottom-center,
+.popover-trigger:focus ~ .popover-content.popover-bottom-center,
+.popover:not(.popover-hover)
+  .popover-content:where(:focus, :focus-within, :focus-visible),
+.popover:not(.popover-hover)
+  .popover-bottom-center:where(:focus, :focus-within, :focus-visible) {
+  visibility: visible;
+  transform: translateX(50%);
+  transform: translateY(0px);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.popover-open .popover-top-center,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-top-center,
+.popover-trigger:focus ~ .popover-content.popover-top-center,
+.popover:not(.popover-hover)
+  .popover-top-center:where(:focus, :focus-within, :focus-visible) {
+  visibility: visible;
+  transform: translateX(50%);
+  transform: translateY(0px);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.popover-open .popover-bottom-right,
+.popover-trigger:focus ~ .popover-content.popover-bottom-right,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-bottom-right,
+.popover:not(.popover-hover)
+  .popover-bottom-right:where(:focus, :focus-within, :focus-visible) {
+  visibility: visible;
+  transform: translateX(0px);
+  transform: translateY(0px);
+  transform: scale(1);
+  opacity: 1;
+}
+.popover-open .popover-bottom-left,
+.popover-trigger:focus ~ .popover-content.popover-bottom-left,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-bottom-left,
+.popover:not(.popover-hover)
+  .popover-bottom-left:where(:focus, :focus-within, :focus-visible) {
+  visibility: visible;
+  transform: translateX(0px);
+  transform: translateY(0px);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.popover-open .popover-left,
+.popover-trigger:focus ~ .popover-content.popover-left,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-left,
+.popover:not(.popover-hover)
+  .popover-left:where(:focus, :focus-within, :focus-visible) {
+  visibility: visible;
+  left: auto;
+  bottom: auto;
+  top: 3rem; /* 48px */
+  transform: translateX(0px);
+  transform: translateY(50%);
+  transform: scale(1);
+  opacity: 1;
+}
+.popover-open .popover-right,
+.popover-trigger:focus ~ .popover-content.popover-right,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-right,
+.popover:not(.popover-hover)
+  .popover-right:where(:focus, :focus-within, :focus-visible) {
+  visibility: visible;
+  right: auto;
+  bottom: auto;
+  top: 3rem; /* 48px */
+  transform: translateX(0px);
+  transform: translateY(50%);
+  transform: scale(1);
+  opacity: 1;
+}
+.popover-open .popover-left-bottom,
+.popover-open .popover-right-bottom,
+.popover-trigger:focus ~ .popover-content.popover-left-bottom,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-left-bottom,
+.popover:not(.popover-hover)
+  .popover-left-bottom:where(:focus, :focus-within, :focus-visible),
+.popover-trigger:focus ~ .popover-content.popover-right-bottom,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-right-bottom,
+.popover:not(.popover-hover)
+  .popover-right-bottom:where(:focus, :focus-within, :focus-visible) {
+  visibility: visible;
+  transform: translateX(0px);
+  transform: translateY(2.5rem);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.popover-open .popover-left-top,
+.popover-open .popover-right-top,
+.popover-trigger:focus ~ .popover-content.popover-left-top,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-left-top,
+.popover:not(.popover-hover)
+  .popover-left-top:where(:focus, :focus-within, :focus-visible),
+.popover-trigger:focus ~ .popover-content.popover-right-top,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-right-top,
+.popover:not(.popover-hover)
+  .popover-right-top:where(:focus, :focus-within, :focus-visible) {
+  visibility: visible;
+  transform: translateX(0px);
+  transform: translateY(1.25rem);
+  transform: scale(1);
+  opacity: 1;
+}
+.popover-open .popover-top-right,
+.popover-open .popover-top-left,
+.popover-trigger:focus ~ .popover-content.popover-top-right,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-top-right,
+.popover:not(.popover-hover)
+  .popover-top-right:where(:focus, :focus-within, :focus-visible),
+.popover-trigger:focus ~ .popover-content.popover-top-left,
+.popover-hover:hover .popover-trigger ~ .popover-content.popover-top-left,
+.popover:not(.popover-hover)
+  .popover-top-left:where(:focus, :focus-within, :focus-visible) {
+  visibility: visible;
+  transform: translateX(0px);
+  transform: translateY(0px);
+  transform: scale(1);
+  opacity: 1;
+}
+.popover-arrow {
+  position: absolute;
+  height: 0.7rem; /* 11.2px */
+  width: 0.7rem; /* 11.2px */
+
+  border-color: transparent;
+  background-color: rgb(243 243 243);
+}
+.popover-border .popover-content .popover-arrow,
+.popover-border .popover-content {
+  border-width: 1px;
+}
+.popover-content:not(
+    .popover-bottom-center,
+    .popover-top-center,
+    .popover-bottom-right,
+    .popover-bottom-left,
+    .popover-left,
+    .popover-right,
+    .popover-left-bottom,
+    .popover-right-bottom,
+    .popover-left-top,
+    .popover-right-top,
+    .popover-top-right,
+    .popover-top-left
+  )
+  .popover-arrow {
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+  left: 50%;
+  top: 0px;
+  border-left-width: 1px;
+  border-top-width: 1px;
+}
+
+.popover-bottom-center .popover-arrow {
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+  left: 50%;
+  top: 0px;
+  border-left-width: 1px;
+  border-top-width: 1px;
+}
+
+.popover-top-center .popover-arrow {
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+  bottom: 0.75rem; /* 12px */
+  left: 50%;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.popover-bottom-right .popover-arrow {
+  transform: translate(50%, -50%);
+  transform: rotate(45deg);
+  top: 0px;
+  left: 1rem; /* 16px */
+  border-left-width: 1px;
+  border-top-width: 1px;
+}
+
+.popover-bottom-left .popover-arrow {
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+  top: 0px;
+  right: 1rem; /* 16px */
+  border-left-width: 1px;
+  border-top-width: 1px;
+}
+
+.popover-left .popover-arrow {
+  transform: translate(50%, -50%);
+  transform: rotate(45deg);
+  right: 0px;
+  top: 3rem; /* 48px */
+  border-right-width: 1px;
+  border-top-width: 1px;
+}
+
+.popover-right .popover-arrow {
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+  left: 0px;
+  top: 3rem; /* 48px */
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.popover-left-bottom .popover-arrow {
+  transform: translate(50%, 50%);
+  transform: rotate(45deg);
+  top: 1rem; /* 16px */
+  right: 0px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+}
+.popover-right-bottom .popover-arrow {
+  transform: translate(-50%, 50%);
+  transform: rotate(45deg);
+  left: 0px;
+  top: 1rem; /* 16px */
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.popover-left-top .popover-arrow {
+  transform: translate(50%, -50%);
+  transform: rotate(45deg);
+  bottom: 1rem; /* 16px */
+  right: 0px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+}
+
+.popover-right-top .popover-arrow {
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+  left: 0px;
+  bottom: 1rem; /* 16px */
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.popover-top-right .popover-arrow {
+  transform: translate(50%, -50%);
+  transform: rotate(45deg);
+  bottom: 0.75rem; /* 12px */
+  left: 1rem; /* 16px */
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.popover-top-left .popover-arrow {
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+
+  bottom: 0.75rem; /* 12px */
+  right: 1rem; /* 16px */
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+}

@@ -1,0 +1,53 @@
+.divider:not(:empty) {
+  gap: 1rem; /* 16px */
+}
+
+.divider {
+  margin-top: 1rem; /* 16px */
+  margin-bottom: 1rem; /* 16px */
+  display: flex;
+  height: 1rem; /* 16px */
+  flex-direction: row;
+  justify-items: start;
+  white-space: nowrap;
+}
+
+.divider::before,
+.divider-horizontal::before {
+  background-color: rgb(75 85 99);
+  height: 1px;
+  width: 100%;
+  content: "";
+}
+
+.divider::after,
+.divider-horizontal::after {
+  background-color: rgb(75 85 99);
+  height: 1px;
+  width: 100%;
+  content: "";
+}
+
+.divider-vertical {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 1rem; /* 16px */
+  margin-right: 1rem; /* 16px */
+  height: 100%;
+  width: 1rem; /* 16px */
+  flex-direction: column;
+}
+
+.divider-vertical::before {
+  background-color: rgb(75 85 99);
+  height: 100%;
+  width: 1px;
+  content: "";
+}
+
+.divider-vertical::after {
+  background-color: rgb(75 85 99);
+  height: 100%;
+  width: 1px;
+  content: "";
+}

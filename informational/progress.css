@@ -1,0 +1,210 @@
+@keyframes indeterminate-progress-bar {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.progress {
+  position: relative;
+  height: 1rem; /* 16px */
+  width: 10rem; /* 160px */
+  appearance: none;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: rgb(107 114 128);
+}
+
+.progress::-webkit-progress-bar {
+  border-radius: 9999px;
+  background-color: rgb(107 114 128);
+}
+
+.progress::-moz-progress-bar {
+  border-radius: 9999px;
+  background-color: rgb(0 114 245);
+}
+
+.progress::-webkit-progress-value {
+  border-radius: 9999px;
+  background-color: rgb(0 114 245);
+}
+
+.progress-xs {
+  height: 0.25rem; /* 4px */
+}
+
+.progress-sm {
+  height: 0.5rem; /* 8px */
+}
+
+.progress-md {
+  height: 1rem; /* 16px */
+}
+
+.progress-lg {
+  height: 1.25rem; /* 20px */
+}
+
+.progress-xl {
+  height: 1.75rem; /* 28px */
+}
+
+.progress:indeterminate::after,
+.progress-indeterminate::after {
+  animation: indeterminate-progress-bar 0.9s infinite;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  width: 33.333333%;
+  border-radius: 9999px;
+  background-color: rgb(0 114 245);
+  content: "";
+}
+
+.progress-primary::-webkit-progress-value,
+.progress-flat-primary::-webkit-progress-value,
+.progress-primary.progress:indeterminate::after,
+.progress-flat-primary.progress:indeterminate::after,
+.progress-primary.progress-indeterminate::after,
+.progress-flat-primary.progress-indeterminate::after {
+  background-color: rgb(0 114 245);
+}
+
+.progress-secondary::-webkit-progress-value,
+.progress-flat-secondary::-webkit-progress-value,
+.progress-secondary.progress:indeterminate::after,
+.progress-flat-secondary.progress:indeterminate::after,
+.progress-secondary.progress-indeterminate::after,
+.progress-flat-secondary.progress-indeterminate::after {
+  background-color: rgb(151 80 221);
+}
+
+.progress-success::-webkit-progress-value,
+.progress-flat-success::-webkit-progress-value,
+.progress-success.progress:indeterminate::after,
+.progress-flat-success.progress:indeterminate::after,
+.progress-success.progress-indeterminate::after,
+.progress-flat-success.progress-indeterminate::after {
+  background-color: rgb(23 201 100);
+}
+
+.progress-error::-webkit-progress-value,
+.progress-flat-error::-webkit-progress-value,
+.progress-error.progress:indeterminate::after,
+.progress-flat-error.progress:indeterminate::after,
+.progress-error.progress-indeterminate::after,
+.progress-flat-error.progress-indeterminate::after {
+  background-color: rgb(243 18 96);
+}
+
+.progress-warning::-webkit-progress-value,
+.progress-flat-warning::-webkit-progress-value,
+.progress-warning.progress:indeterminate::after,
+.progress-flat-warning.progress:indeterminate::after,
+.progress-warning.progress-indeterminate::after,
+.progress-flat-warning.progress-indeterminate::after {
+  background-color: rgb(255 184 0);
+}
+
+.progress-info::-webkit-progress-value,
+.progress-flat-info::-webkit-progress-value,
+.progress-info.progress:indeterminate::after,
+.progress-flat-info.progress:indeterminate::after,
+.progress-info.progress-indeterminate::after,
+.progress-flat-info.progress-indeterminate::after {
+  background-color: rgb(3 183 219);
+}
+
+.progress-flat-primary::-webkit-progress-bar,
+.progress-flat-primary.progress-indeterminate {
+  background-color: rgb(206 231 254);
+}
+
+.progress-flat-secondary::-webkit-progress-bar,
+.progress-flat-secondary.progress-indeterminate {
+  background-color: rgb(168 85 247);
+}
+
+.progress-flat-success::-webkit-progress-bar,
+.progress-flat-success.progress-indeterminate {
+  background-color: rgb(204 235 215);
+}
+
+.progress-flat-error::-webkit-progress-bar,
+.progress-flat-error.progress-indeterminate {
+  background-color: rgb(253 216 216);
+}
+
+.progress-flat-warning::-webkit-progress-bar,
+.progress-flat-warning.progress-indeterminate {
+  background-color: rgb(254 242 164);
+}
+
+.progress-flat-info::-webkit-progress-bar,
+.progress-flat-info.progress-indeterminate {
+  background-color: rgb(196 234 239);
+}
+
+/* Firefox Target */
+@supports (-moz-appearance: none) {
+  .progress-flat-primary {
+    background-color: rgb(206 231 254);
+  }
+
+  .progress-flat-secondary {
+    background-color: rgb(168 85 247);
+  }
+
+  .progress-flat-success {
+    background-color: rgb(204 235 215);
+  }
+
+  .progress-flat-error {
+    background-color: rgb(253 216 216);
+  }
+
+  .progress-flat-warning {
+    background-color: rgb(254 242 164);
+  }
+
+  .progress-flat-info {
+    background-color: rgb(196 234 239);
+  }
+
+  .progress-primary::-moz-progress-bar,
+  .progress-flat-primary::-moz-progress-bar {
+    background-color: rgb(0 114 245);
+  }
+
+  .progress-secondary::-moz-progress-bar,
+  .progress-flat-secondary::-moz-progress-bar {
+    background-color: rgb(151 80 221);
+  }
+
+  .progress-success::-moz-progress-bar,
+  .progress-flat-success::-moz-progress-bar {
+    background-color: rgb(23 201 100);
+  }
+
+  .progress-error::-moz-progress-bar,
+  .progress-flat-error::-moz-progress-bar {
+    background-color: rgb(243 18 96);
+  }
+
+  .progress-warning::-moz-progress-bar,
+  .progress-flat-warning::-moz-progress-bar {
+    background-color: rgb(255 184 0);
+  }
+
+  .progress-info::-moz-progress-bar,
+  .progress-flat-info::-moz-progress-bar {
+    background-color: rgb(3 183 219);
+  }
+
+  .progress:indeterminate::-moz-progress-bar {
+    background-color: transparent;
+  }
+}
